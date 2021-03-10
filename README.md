@@ -31,7 +31,7 @@ A starter template for Svelte Application that comes preconfigured with Typescri
 Pull the template files with [`degit`](https://github.com/Rich-Harris/degit) and install dependencies.
 
 ```bash
-npx degit iamkhan21/svelte-typescript-vite-template
+npx degit iamkhan21/svelte-typescript-vite-template my-new-project
 npm install
 ```
 
