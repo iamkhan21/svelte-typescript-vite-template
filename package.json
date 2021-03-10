@@ -1,0 +1,47 @@
+{
+  "name": "svelte-typescript-vite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "watch:ts": "tsc --noEmit --watch",
+    "watch:svelte": "svelte-check --human --watch",
+    "start": "run-p watch:* dev",
+    "check": "svelte-check --human && tsc --noEmit",
+    "clean": "rimraf ./dist",
+    "compile": "cross-env NODE_ENV=production vite build",
+    "build": "run-s check clean compile",
+    "preview": "sirv dist"
+  },
+  "keywords": [],
+  "author": "Ivan Khanevich <ivan.khanevich@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@tsconfig/svelte": "^1.0.10",
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-advanced": "^4.0.7",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.8",
+    "postcss-load-config": "^3.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-utilities": "^0.8.4",
+    "precss": "^4.0.0",
+    "prettier": "^2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-svelte": "^7.1.0",
+    "sirv-cli": "^1.0.11",
+    "svelte": "^3.35.0",
+    "svelte-check": "^1.2.3",
+    "svelte-preprocess": "^4.6.9",
+    "svelte-spa-router": "^3.1.0",
+    "typescript": "^4.2.3",
+    "vite": "^2.0.5"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
