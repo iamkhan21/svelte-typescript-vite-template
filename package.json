@@ -14,7 +14,7 @@
     "build": "run-s check clean compile",
     "preview": "sirv dist"
   },
-  "keywords": [],
+  "keywords": ["svelte", "typescript", "vite", "postcss", "template"],
   "author": "Ivan Khanevich <ivan.khanevich@gmail.com>",
   "license": "MIT",
   "devDependencies": {
